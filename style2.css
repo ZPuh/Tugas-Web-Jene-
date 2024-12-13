@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #000000;
+    background: #00A6D6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -35,13 +35,13 @@
     margin: 0 10px;
   }
   
-  .nav-links a {
+  .nav-links a{
     text-decoration: none;
     color: white;
     font-weight: 500;
     transition: color 0.3s ease;
   }
-  
+
   .nav-links a:hover {
     color: #ffd700;
   }
@@ -77,7 +77,7 @@
   .hero .hero-text {
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 10px;
     animation: fadeInUp 1s ease-out;
@@ -91,7 +91,7 @@
   .hero .btn {
     text-decoration: none;
     color: white;
-    background: #000000;
+    background: #00A6D6;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -110,7 +110,7 @@
   
   /* Footer */
   footer {
-    background: #000000;
+    background: #00A6D6;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -135,7 +135,99 @@
   footer .social-icons a:hover {
     color: #ffd700;
   }
+
+  /*  */
+  .highlight-destinasi {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
   
+  .highlight-destinasi .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .highlight-destinasi h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .destinasi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .destinasi-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(179, 229, 252, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .destinasi-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .destinasi-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .destinasi-item h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+  }
+  
+  .destinasi-item p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .destinasi-item .btn {
+    background-color: #00A6D6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .destinasi-item .btn:hover {
+    background-color: #008bb5;
+  }
+  
+  /* Dropdown Style */
+.dropdown {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  background-color: #00a8d63b;
+  box-shadow: none;
+  display: block;
+}
+
   /* Animations */
   @keyframes fadeInUp {
     from {
@@ -153,7 +245,8 @@
     .nav-links {
       display: none;
       flex-direction: column;
-      background: rgba(0, 0, 0, 0.7);
+      background-color: #00a8d63b;
+      /* background: rgba(0, 0, 0, 0.2); */
       position: absolute;
       top: 60px;
       right: 0;
@@ -170,3 +263,43 @@
     }
   }
   
+  /* Highlight Destinasi Populer Responsiveness */
+@media (max-width: 1024px) {
+  .destinasi-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk tablet */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .destinasi-grid {
+    grid-template-columns: 1fr; /* Satu kolom untuk ponsel */
+    gap: 15px;
+  }
+
+  .highlight-destinasi .container {
+    width: 90%; /* Mempersempit container */
+  }
+
+  .highlight-destinasi h2 {
+    font-size: 2em; /* Ukuran judul lebih kecil */
+  }
+
+  .destinasi-item h3 {
+    font-size: 1.5em; /* Ukuran teks judul lebih kecil */
+  }
+
+  .destinasi-item p {
+    font-size: 1em; /* Ukuran deskripsi lebih kecil */
+  }
+
+  .dropdown-content {
+    display: grid;
+    position: relative;    
+  }
+
+.dropdown-content a{
+    margin: -12px;
+  }
+}
+

@@ -1,0 +1,274 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #00A6D6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;    
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #00A6D6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  footer .social-icons li {
+    margin: 0 10px;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffd700;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Destinasi Wisata */
+.destinasi {
+    padding: 50px 0;
+    background-color: #f4f9fc;
+    text-align: center;
+}
+
+.destinasi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.destinasi-category {
+    margin-bottom: 40px;
+}
+
+.destinasi-category h3 {
+    font-size: 2rem;
+    color: #00A6D6;
+    margin-bottom: 20px;
+}
+
+.destinasi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.destinasi-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destinasi-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.destinasi-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destinasi-item h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.destinasi-item p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.destinasi-item .btn {
+    display: inline-block;
+    background-color: #00A6D6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.destinasi-item .btn:hover {
+    background-color: #008bb5;
+}
+
+/* Galeri Foto */
+.galeri {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.galeri h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeri-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeri-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Style */
+.dropdown {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+ .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    background-color: #00a8d63b;
+    box-shadow: none;
+    display: block;
+  }
+  
+/* Responsiveness */
+@media (max-width: 768px) {
+    .destinasi h2, .galeri h2 {
+        font-size: 2rem;
+    }
+
+    .destinasi-category h3 {
+        font-size: 1.5rem;
+    }
+
+    .destinasi-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .destinasi-item p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #00a8d63b;
+      /* background: rgba(0, 0, 0, 0.2); */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+
+    .dropdown-content {
+        display: grid;
+        position: relative;    
+      }
+
+    .dropdown-content a{
+        margin: -12px;
+      }
+  }
+
+  

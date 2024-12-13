@@ -15,50 +15,59 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <!-- <span>Majene</span> -->
-         <a href="index.html">Jelajah Majene</a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="wisata.html"><i class="fas fa-map-marker-alt"></i> Wisata</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Jelajah Majene</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+      <li>
+        <div class="dropdown">
+            <a href="wisata.html"><i class="fas fa-map-marker-alt"></i> Wisata</a>
+          <div class="dropdown-content">
+            <a href="alam.html">Keindahan Alam</a>
+            <a href="budaya.html">Budaya</a>
+            <a href="kuliner.html">Kuliner</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <!-- Slide 1 -->
-        <div class="swiper-slide" style="background-image: url('images/dato2.jpg');">
+        <div class="swiper-slide" style="background-image: url('images/alamalam.jpeg');">
           <div class="hero-text">
-            <h1>Pantai Dato</h1>
-            <p>Surganya Keindahan Alam di Ujung Sulawesi – Pantai Dato, Pesona yang Tak Terlupakan!</p>
-            <a href="#" class="btn">Explore Now</a>
+            <h1>Keindahan Alam</h1>
+            <p>Nikmati pemandangan alam yang memukau, mulai dari pantai yang menenangkan hingga pegunungan yang menantang.</p>
+            <a href="alam.html" class="btn">Jelajahi</a>
           </div>
         </div>
         <!-- Slide 2 -->
         <div class="swiper-slide" style="background-image: url('images/MuseumMandar.jpg');">
           <div class="hero-text">
-            <h1>Museum Mandar</h1>
-            <p>Melestarikan Sejarah, Menjaga Identitas – Museum Mandar, Warisan Budaya yang Abadi!</p>
-            <a href="#" class="btn">Discover More</a>
+            <h1>Budaya</h1>
+            <p>Temukan kekayaan budaya lokal melalui tradisi, seni, dan sejarah yang menginspirasi.</p>
+            <a href="budaya.html" class="btn">Jelajahi</a>
           </div>
         </div>
         <!-- Slide 3 -->
-        <div class="swiper-slide" style="background-image: url('images/makam.jpg');">
+        <div class="swiper-slide" style="background-image: url('images/somba.png');">
           <div class="hero-text">
-            <h1>Makam Raja-Raja</h1>
-            <p>Jejak Kejayaan dan Warisan Leluhur – Makam Raja-Raja, Simbol Sejarah yang Abadi!</p>
-            <a href="#" class="btn">Learn More</a>
+            <h1>Kuliner</h1>
+            <p>Cicipi cita rasa khas yang autentik dari beragam kuliner lokal yang menggugah selera.</p>
+            <a href="kuliner.html" class="btn">Jelajahi</a>
           </div>
         </div>
       </div>
@@ -66,6 +75,33 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+  <!-- Highlight Destinasi Populer -->
+  <section class="highlight-destinasi">
+    <div class="container">
+      <h2>Destinasi Populer</h2>
+      <div class="destinasi-grid">
+        <!-- Destinasi 1 -->
+        <div class="destinasi-item">
+          <img src="images/dato2.jpg" alt="Pantai Dato">
+          <h3>Pantai Dato</h3>
+          <p>Keindahan alam yang mempesona di ujung Sulawesi.</p>
+        </div>
+        <!-- Destinasi 2 -->
+        <div class="destinasi-item">
+          <img src="images/MuseumMandar.jpg" alt="Museum Mandar">
+          <h3>Museum Mandar</h3>
+          <p>Menjaga warisan budaya dan sejarah Mandar.</p>         
+        </div>
+        <!-- Destinasi 3 -->
+        <div class="destinasi-item">
+          <img src="images/somba.png" alt="Makam Raja-Raja">
+          <h3>Wisata Kuliner Somba</h3>
+          <p>Nikmati hidangan khas Mandar dengan cita rasa autentik.</p>       
+        </div>
+      </div>
     </div>
   </section>
 
@@ -79,6 +115,5 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-  
 </body>
 </html>
