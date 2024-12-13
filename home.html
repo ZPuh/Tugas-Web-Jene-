@@ -3,25 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lampung Selatan</title>
+  <title>Jelajah Majene</title>
   <!-- Link CSS -->
   <link rel="stylesheet" href="style2.css">
   <!-- Swiper.js CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">
-        <span>Majene</span>
+        <!-- <span>Majene</span> -->
+         <a href="index.html">Jelajah Majene</a>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#wisata">Wisata</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="wisata.html"><i class="fas fa-map-marker-alt"></i> Wisata</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +42,7 @@
           <div class="hero-text">
             <h1>Pantai Dato</h1>
             <p>Surganya Keindahan Alam di Ujung Sulawesi – Pantai Dato, Pesona yang Tak Terlupakan!</p>
-            <a href="images/Pantai dato.jpg" class="btn">Explore Now</a>
+            <a href="#" class="btn">Explore Now</a>
           </div>
         </div>
         <!-- Slide 2 -->
@@ -43,7 +50,7 @@
           <div class="hero-text">
             <h1>Museum Mandar</h1>
             <p>Melestarikan Sejarah, Menjaga Identitas – Museum Mandar, Warisan Budaya yang Abadi!</p>
-            <a href="images/MuseumMandar.jpg" class="btn">Discover More</a>
+            <a href="#" class="btn">Discover More</a>
           </div>
         </div>
         <!-- Slide 3 -->
@@ -51,7 +58,7 @@
           <div class="hero-text">
             <h1>Makam Raja-Raja</h1>
             <p>Jejak Kejayaan dan Warisan Leluhur – Makam Raja-Raja, Simbol Sejarah yang Abadi!</p>
-            <a href="#explore" class="btn">Learn More</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -62,8 +69,16 @@
     </div>
   </section>
 
-  <!-- Script -->
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Majene Tourism. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  
 </body>
 </html>
